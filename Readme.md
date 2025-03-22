@@ -1,4 +1,4 @@
-<img src="https://github.com/Vchitect/SEINE/blob/main/seine.gif?raw=true" width="800">
+<img src="https://github.com/chaidosa/AI-535-Final-Project/blob/main/simple_col.gif?raw=true" width="800">
 
 
 ##  Setup
