@@ -1,4 +1,4 @@
-<img src="https://github.com/chaidosa/AI-535-Final-Project/blob/main/simple_col.gif?raw=true" width="800">
+<img src="https://github.com/chaidosa/AI-535-Final-Project/blob/main/col_sim.gif?raw=true" width="800">
 
 
 ##  Setup
@@ -10,7 +10,7 @@ conda activate seine
 pip install -r requirement.txt
 ```
 
-### Download our model and T2I base model
+### Download SEINE model and T2I base model
 
 Our model is based on Stable diffusion v1.4, you may download [Stable Diffusion v1-4](https://huggingface.co/CompVis/stable-diffusion-v1-4) to the director of ``` pretrained ```
 .
@@ -49,83 +49,3 @@ For example:
 python sample_scripts/with_mask_sample.py --config configs/sample_transition.yaml
 ```
 The generated video will be saved in ```./results/transition```.
-
-
-
-
-## Results
-### I2V Results
-<table class="center">
-<tr>
-  <td style="text-align:center;width: 50%" colspan="1"><b>Input Image</b></td>
-  <td style="text-align:center;width: 50%" colspan="1"><b>Output Video</b></td>
-</tr>
-<tr>
-  <td><img src="https://github.com/Vchitect/SEINE-project/blob/main/static/image-animation/more_results/Close-up_essence_is_poured_from_bottleKodak_Vision.png?raw=true"></td>
-  <td><img src="examples/Close-up essence is poured from bottleKodak Vision3 50,slow motion_0000_001.gif"></td>
-</tr>
-
-<tr>
-  <td><img src="input/i2v/The_picture_shows_the_beauty_of_the_sea_and_at_the_same.png"></td>
-  <td><img src="examples/The picture shows the beauty of the sea and at the sam,slow motion_0000_11301.gif"></td>
-</tr>
-
-<tr>
-  <td><img src="input/i2v/The_picture_shows_the_beauty_of_the_sea.png"></td>
-  <td><img src="examples/The picture shows the beauty of the sea and at the sam,slow motion_0000_6600.gif"></td>
-</tr>
-
-</table>
-
-
-### Transition Results
-<table>
-<tr>
-  <td style="text-align:center;width: 66%" colspan="2"><b>Input Images</b></td>
-  <td style="text-align:center;width: 33%" colspan="1"><b>Output Video</b></td>
-</tr>
-<tr>
-  <td><img src="https://vchitect.github.io/SEINE-project/static/diverse/reference-scene/1-Close-up%20shot%20of%20a%20blooming%20cherry%20tree,%20realism-1.png" ></td>
-  <td><img src="https://vchitect.github.io/SEINE-project/static/diverse/reference-scene/2-Wide%20angle%20shot%20of%20an%20alien%20planet%20with%20cherry%20blossom%20forest-2.png" ></td>
-  <td><img src="examples/Travel from Earth's spring blossoms to the alien cherry blossom forestssmooth transition, slow motion_0000_003.gif" ></td>
-</tr>
-<tr>
-  <td><img src="https://vchitect.github.io/SEINE-project/static/transition/spiderman/spiderman.png" ></td>
-  <td><img src="https://vchitect.github.io/SEINE-project/static/transition/spiderman/sand.png" ></td>
-  <td><img src="examples/spiderman-becomes-a-sand-sculpture.gif" ></td>
-</tr>
-
-</table>
-
-## BibTeX
-```bibtex
-@inproceedings{chen2023seine,
-  title={Seine: Short-to-long video diffusion model for generative transition and prediction},
-  author={Chen, Xinyuan and Wang, Yaohui and Zhang, Lingjun and Zhuang, Shaobin and Ma, Xin and Yu, Jiashuo and Wang, Yali and Lin, Dahua and Qiao, Yu and Liu, Ziwei},
-  booktitle={ICLR},
-  year={2023}
-}
-```
-
-```bibtex
-@article{wang2023lavie,
-  title={LAVIE: High-Quality Video Generation with Cascaded Latent Diffusion Models},
-  author={Wang, Yaohui and Chen, Xinyuan and Ma, Xin and Zhou, Shangchen and Huang, Ziqi and Wang, Yi and Yang, Ceyuan and He, Yinan and Yu, Jiashuo and Yang, Peiqing and others},
-  journal={IJCV},
-  year={2024}
-}
-```
-
-## Disclaimer
-We disclaim responsibility for user-generated content. The model was not trained to realistically represent people or events, so using it to generate such content is beyond the model's capabilities. It is prohibited for pornographic, violent and bloody content generation, and to generate content that is demeaning or harmful to people or their environment, culture, religion, etc. Users are solely liable for their actions. The project contributors are not legally affiliated with, nor accountable for users' behaviors. Use the generative model responsibly, adhering to ethical and legal standards.
-
-## Contact Us
-**Xinyuan Chen**: [chenxinyuan@pjlab.org.cn](mailto:chenxinyuan@pjlab.org.cn)
-**Yaohui Wang**: [wangyaohui@pjlab.org.cn](mailto:wangyaohui@pjlab.org.cn)  
-
-## Acknowledgements
-The code is built upon [LaVie](https://github.com/Vchitect/LaVie), [diffusers](https://github.com/huggingface/diffusers) and [Stable Diffusion](https://github.com/CompVis/stable-diffusion), we thank all the contributors for open-sourcing. 
-
-
-## License
-The code is licensed under Apache-2.0, model weights are fully open for academic research and also allow **free** commercial usage. To apply for a commercial license, please contact vchitect@pjlab.org.cn.
