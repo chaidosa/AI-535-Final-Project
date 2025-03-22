@@ -27,7 +27,7 @@ Now under `./pretrained`, you should be able to see the following:
         ├── ...
 ```
 ## Usage
-### Inference for Collsion
+### Inference for Collision
 Run the following command to get the I2V results:
 ```python
 python sample_scripts/with_mask_sample.py --config configs/collision.yaml
