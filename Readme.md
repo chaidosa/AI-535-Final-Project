@@ -20,32 +20,17 @@ Download our model checkpoint (from [google drive](https://drive.google.com/driv
 Now under `./pretrained`, you should be able to see the following:
 ```
 ├── pretrained
-│   ├── seine.pt
+│   ├── seine.pt or checkpoints after training 
 │   ├── stable-diffusion-v1-4
 │   │   ├── ...
 └── └── ├── ...
         ├── ...
 ```
 ## Usage
-### Inference for I2V 
+### Inference for Collsion
 Run the following command to get the I2V results:
 ```python
-python sample_scripts/with_mask_sample.py --config configs/sample_i2v.yaml
+python sample_scripts/with_mask_sample.py --config configs/collision.yaml
 ```
-The generated video will be saved in ```./results/i2v```.
+The generated video will be saved in ```./results/collsion```.
 
-#### More Details
-You may modify ```./configs/sample_i2v.yaml``` to change the generation conditions.
-For example:
-
-```ckpt``` is used to specify a model checkpoint.
-
-```text_prompt``` is used to describe the content of the video.
-
-```input_path``` is used to specify the path to the image.
-
-### Inference for Transition
-```python
-python sample_scripts/with_mask_sample.py --config configs/sample_transition.yaml
-```
-The generated video will be saved in ```./results/transition```.
