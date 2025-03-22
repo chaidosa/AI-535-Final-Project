@@ -1,3 +1,4 @@
+# Investigating Video Diffusion Models for Predicting Object Collision Dynamics
 <img src="https://github.com/chaidosa/AI-535-Final-Project/blob/main/col_sim.gif?raw=true" width="800">
 
 
@@ -5,10 +6,13 @@
 
 ### Prepare Environment
 ```
-conda create -n seine python==3.9.16
-conda activate seine
+conda create -n env-name python==3.9.16
+conda activate env-name
 pip install -r requirement.txt
 ```
+
+### Dataset
+For training one can get the dataset from [https://clevrer.csail.mit.edu] and carefully generate it as we have described in teh report.
 
 ### Download SEINE model and T2I base model
 
