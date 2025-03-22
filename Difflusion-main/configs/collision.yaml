@@ -1,0 +1,27 @@
+# path config:
+ckpt: "/nfs/stak/users/vermapri/hpc-share/Projects/SEINE_2/SEINE/output/seine_custom_full-2/checkpoints/model_best.pt"
+pretrained_model_path: "pretrained/stable-diffusion-v1-4/"
+input_path: "input/transition/collision/"
+save_path: "./results/collision/"
+
+# model config: 
+model: UNet
+num_frames: 16
+image_size: [256, 256]
+
+# model speedup
+use_fp16: False
+enable_xformers_memory_efficient_attention: True
+use_concat: True
+# sample config:
+seed: 0
+run_time: 13
+cfg_scale: 8.0
+sample_method: 'ddpm'
+num_sampling_steps: 250
+text_prompt: ["collisions of rigid objects on top of gray table"]
+additional_prompt: ""
+negative_prompt: ""
+do_classifier_free_guidance: True
+mask_type: "first5last"
+use_mask: True
